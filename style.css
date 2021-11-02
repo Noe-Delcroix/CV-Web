@@ -10,13 +10,13 @@
 @font-face {
     font-family: "Roboto";
     font-weight: normal;
-    src: url(/ressources/fonts/Roboto-Thin.ttf);
+    src: url(ressources/fonts/Roboto-Thin.ttf);
 }
 
 @font-face {
     font-family: "Roboto";
     font-weight: bold;
-    src: url(/ressources/fonts/Roboto-Regular.ttf);
+    src: url(ressources/fonts/Roboto-Regular.ttf);
 }
 
 *{
@@ -46,7 +46,7 @@ body{
     height: 100vh;
     top: 0;
     left: 0;
-    background-image: url(/ressources/images/welcome_background.png);
+    background-image: url(ressources/images/welcome_background.png);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
