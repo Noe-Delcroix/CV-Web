@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noé Delcroix - CV Web</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="competences.css">
     <script src="https://kit.fontawesome.com/c8b8446429.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,7 +20,7 @@
 
         <div class="navbar-list">
             <ul>
-                <li><a href="#">Compétences</a></li>
+                <li><a href="#competences-section">Compétences</a></li>
                 <li><a href="#">Projets</a></li>
                 <li><a href="#">Lien 3</a></li>
                 <li><a href="#">Lien 4</a></li>
@@ -25,7 +28,7 @@
         </div>
     </nav>
 
-    <section class="welcome-section">
+    <section id="welcome-section">
         <div class="welcome">
             <img class="photo" src="ressources/images/photo_pro_carré.jpg" alt="Photo Pro">
 
@@ -36,7 +39,7 @@
                 <h3>Bonne Visite !</h3>
                 <div class="welcome-buttons">
                     <a class="welcome-button" href="ressources/documents/CV.pdf" target="_blank">Mon CV</a>
-                    <a class="welcome-button" href="#">En Savoir Plus</a>
+                    <a class="welcome-button" href="#competences-section">En Savoir Plus</a>
                 </div>
 
                 <div class="contacts">
@@ -59,14 +62,44 @@
         </div>
     </section>
 
-    <section>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit modi vel, veritatis quam sed magnam asperiores dolorem recusandae ad dicta! Voluptatem corrupti odio animi consectetur, fuga doloremque aut sint sapiente.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit modi vel, veritatis quam sed magnam asperiores dolorem recusandae ad dicta! Voluptatem corrupti odio animi consectetur, fuga doloremque aut sint sapiente.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit modi vel, veritatis quam sed magnam asperiores dolorem recusandae ad dicta! Voluptatem corrupti odio animi consectetur, fuga doloremque aut sint sapiente.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit modi vel, veritatis quam sed magnam asperiores dolorem recusandae ad dicta! Voluptatem corrupti odio animi consectetur, fuga doloremque aut sint sapiente.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit modi vel, veritatis quam sed magnam asperiores dolorem recusandae ad dicta! Voluptatem corrupti odio animi consectetur, fuga doloremque aut sint sapiente.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit modi vel, veritatis quam sed magnam asperiores dolorem recusandae ad dicta! Voluptatem corrupti odio animi consectetur, fuga doloremque aut sint sapiente.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit modi vel, veritatis quam sed magnam asperiores dolorem recusandae ad dicta! Voluptatem corrupti odio animi consectetur, fuga doloremque aut sint sapiente.</p>
+    <section id="competences-section"> 
+        <h1>Compétences</h1>
+        <h2>Languages :</h2>
+        <ul>
+            <li class="competence-item"><a href="https://www.java.com/fr/" target="_blank"><img src="ressources/images/languages/java.png" alt="java"></a><span>Java 11</span></li>
+            <li class="competence-item"><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"><img src="ressources/images/languages/javascript.png" alt="javascript"></a><span>JavaScript</span></li>
+            <li class="competence-item"><a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"><img src="ressources/images/languages/html.png" alt="html"></a><span>HTML 5</span></li>
+            <li class="competence-item"><a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"><img src="ressources/images/languages/css.png" alt="css"></a><span>CSS 3</span></li>
+            <li class="competence-item"><a href="https://www.python.org/" target="_blank"><img src="ressources/images/languages/python.png" alt="python"></a><span>Python</span></li>
+            <li class="competence-item"><a href="https://sql.sh/" target="_blank"><img src="ressources/images/languages/sql.png" alt="css"></a><span>SQL</span></li>
+            <li class="competence-item"><a href="https://git-scm.com/" target="_blank"><img src="ressources/images/languages/git.png" alt="git"></a><span>Git</span></li>
+            <li class="competence-item"><a href="https://www.cprogramming.com/" target="_blank"><img src="ressources/images/languages/c.png" alt="c"></a><span>C</span></li>
+            <li class="competence-item"><a href="https://www.cobol-it.com/" target="_blank"><img src="ressources/images/languages/cobol.png" alt="cobol"></a><span>Cobol</span></li>
+        </ul>
+
+        <h2>Librairies :</h2>
+        <ul>
+            <li class="competence-item"><a href="https://openjfx.io/" target="_blank"><img src="ressources/images/librairies/JavaFX.png" alt="javafx"></a><span>JavaFX</span></li>
+            <li class="competence-item"><a href="https://www.oracle.com/fr/java/technologies/java-ee-glance.html" target="_blank"><img src="ressources/images/librairies/Java EE.png" alt="jee"></a><span>Java Enterprise Edition</span></li>
+            <li class="competence-item"><a href="https://www.oracle.com/fr/database/technologies/appdev/jdbc.html" target="_blank"><img src="ressources/images/librairies/jdbc.png" alt="jdbc"></a><span>Java Database Connectivity</span></li>
+            <li class="competence-item"><a href="https://p5js.org/" target="_blank"><img src="ressources/images/librairies/p5.js.png" alt="p5.js"></a><span>p5.js</span></li>
+            <li class="competence-item"><a href="https://processing.org/" target="_blank"><img src="ressources/images/librairies/processing.png" alt="p5.js"></a><span>Processing</span></li>
+        </ul>
+
+        <h2>Logiciels :</h2>
+        <ul>
+            <li class="competence-item"><a href="https://www.eclipse.org/" target="_blank"><img src="ressources/images/softwares/eclipse.png" alt="eclipse"></a><span>Eclipse</span></li>
+            <li class="competence-item"><a href="https://www.jetbrains.com/fr-fr/idea/" target="_blank"><img src="ressources/images/softwares/intelliJ.png" alt="intellij"></a><span>IntelliJ</span></li>
+            <li class="competence-item"><a href="https://code.visualstudio.com/" target="_blank"><img src="ressources/images/softwares/VSCode.png" alt="vsCode"></a><span>Visual Studio Code</span></li>
+            <li class="competence-item"><a href="https://atom.io/" target="_blank"><img src="ressources/images/softwares/atom.png" alt="atom"></a><span>Atom</span></li>
+            <li class="competence-item"><a href="https://www.microsoft.com/fr-fr/microsoft-365/excel" target="_blank"><img src="ressources/images/softwares/excel.png" alt="excel"></a><span>Excel</span></li>
+            <li class="competence-item"><a href="https://www.microsoft.com/fr-fr/microsoft-365/word" target="_blank"><img src="ressources/images/softwares/word.png" alt="word"></a><span>Word</span></li>
+            <li class="competence-item"><a href="https://www.microsoft.com/fr-fr/microsoft-365/powerpoint" target="_blank"><img src="ressources/images/softwares/powerpoint.png" alt="powerpoint"></a><span>Powerpoint</span></li>
+            <li class="competence-item"><a href="https://www.adobe.com/fr/products/photoshop.html" target="_blank"><img src="ressources/images/softwares/photoshop.png" alt="photoshop"></a><span>Photoshop</span></li>
+            <li class="competence-item"><a href="https://www.getpaint.net/" target="_blank"><img src="ressources/images/softwares/paint.net.png" alt="paint.net"></a><span>Paint.net</span></li>
+            <li class="competence-item"><a href="https://www.audacityteam.org/" target="_blank"><img src="ressources/images/softwares/audacity.png" alt="audacity"></a><span>Audacity</span></li>
+            <li class="competence-item"><a href="https://www.image-line.com/" target="_blank"><img src="ressources/images/softwares/fl-studio.png" alt="flstudio"></a><span>FL Studio</span></li>
+        </ul>
     </section>
     
 </body>

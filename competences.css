@@ -1,0 +1,78 @@
+#competences-section{
+    
+    background: var(--bg-color4);
+    margin-top: 100vh;
+    padding: 2% 7%;
+}
+
+#competences-section h1{
+    color:var(--text-color);
+    font-weight: bold;
+    font-size: 3em;
+    border-bottom: solid 3px var(--text-color);
+}
+
+#competences-section h2{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color:var(--title-color);
+    font-size: 2em;
+}
+
+#competences-section ul{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background: var(--bg-color3);
+    border-radius: 25px 25px 0px 0px ;
+    
+}
+
+
+.competence-item{
+    display: inline;
+    position: relative;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.competence-item a img{
+    width: 10%;
+    transition: 0.3s;
+    margin: 1.5%;
+}
+
+.competence-item a img:hover{
+    transform: scale(1.2,1.2);
+}
+
+
+.competence-item span {
+    visibility: hidden;
+    
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    font-size: 1.3em;
+    font-weight: bold;
+    
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+
+    width: auto;
+    padding: 5%;
+    transform: translateX(-50%) translateY(50%);
+    
+    bottom: 100%;
+    left: 50%;
+    z-index: 5;
+
+    transition: 0.3s;
+}
+
+.competence-item:hover span {
+    visibility: visible;
+    background-color: var(--bg-color4);
+    color: var(--title-color);
+}
