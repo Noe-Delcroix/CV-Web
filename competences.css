@@ -32,7 +32,6 @@
 .competence-item{
     display: inline;
     position: relative;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 .competence-item a img{

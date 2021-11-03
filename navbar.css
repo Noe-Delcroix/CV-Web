@@ -10,10 +10,16 @@
 }
 
 .title{
-    font-size: 2.5em;
-    margin: 0.5em;
+    font-size: 3em;
     color : var(--text-color);
     font-weight: bold;
+    white-space: nowrap;
+}
+
+.navbar-left{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
 }
 
 .navbar-list ul{
@@ -27,8 +33,29 @@
     font-size: 2em;
     display: block;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .navbar-list ul li:hover{
     background: linear-gradient(180deg, var(--bg-color1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.navbar-button{
+    background: none;
+    border: solid 3px var(--title-color) ;
+    font-size: 1.5em;
+    padding: 1% 2%;
+    margin-left: 5%;
+    color: var(--title-color);
+    border-radius: 20px;
+    transition: 0.3s;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    
+}
+
+.navbar-button:hover{
+    color: var(--text-color);
+    background-color: var(--bg-color1);
 }
