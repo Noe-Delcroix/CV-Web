@@ -7,13 +7,15 @@
     <title>Noé Delcroix - CV Web</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
+    <script type="text/javascript" src="navbar.js"></script>
     <link rel="stylesheet" href="welcome.css">
     <link rel="stylesheet" href="competences.css">
+    <link rel="stylesheet" href="projects.css">
     <script src="https://kit.fontawesome.com/c8b8446429.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
         <div class=navbar-left>
             <div class="title">
                 Noé Delcroix
@@ -27,7 +29,7 @@
         <div class="navbar-list">
             <ul>
                 <li><a href="#competences-section">Compétences</a></li>
-                <li><a href="#">Projets</a></li>
+                <li><a href="#projets-section">Projets</a></li>
                 <li><a href="#">Lien 3</a></li>
                 <li><a href="#">Lien 4</a></li>
             </ul>
@@ -108,8 +110,146 @@
         </ul>
     </section>
     
-    <section class="projets-section">
+    <section id="projets-section">
+        
+        <div class="header">
+            <h1>Mes Projets</h1>
+            <p>Voici certains des projets que j'ai eu l'occasion de réaliser. 
+                Vous pouvez retrouvez l'integralité de mes projets sur <a href="https://github.com/Noe-Delcroix?tab=repositories" target="_blank">ma page GitHub</a></p>
+        </div>
 
+        <div class="projet-left">
+            
+            <div class="info">
+                <div class="text">
+                    <div class="title">
+                        <h1>Color Picker</h1>
+                        <h2>Mai 2021</h2>
+                    </div>
+                    <p>Interface graphique qui permet de créer des palettes de couleur tout en ayant un apercu de ce que ces couleurs rendraient lors d'une impression en noir et blanc</p>
+                </div>
+
+                <div class="buttons">
+                    <a class="play-button" href="https://github.com/Noe-Delcroix/Color-Picker" target="_blank"><i class="fa-brands fa-github"></i> Code Source</a>
+                </div>
+
+                <ul>
+                    <li style="background-color: #D82C33; color: black;">Java</li>
+                    <li style="background-color: #D82C33; color: white;">JavaFX</li>
+                    
+                </ul>
+            </div>
+            <video src="ressources/videos/color-picker.mp4" oncontextmenu="return false;" autoplay=true loop=true muted=true>Vidéo Color Picker</video>
+        </div>
+
+        <div class="projet-right">
+            <video src="ressources/videos/ant-simulation.mp4" oncontextmenu="return false;" autoplay=true loop=true muted=true>Vidéo Ant Simulation</video>
+            <div class="info">
+
+                <div class="text">
+                    <div class="title">
+                        <h1>Ant Simulation</h1>
+                        <h2>Mars 2021</h2>
+                    </div>
+                    <p>Programme qui a pour but simule les comportement des fourmis qui font des allers-retours pour aller chercher de la nourriture et la ramener à la colonie, le tout en s'orientant grâce à des phéromones</p>
+                </div>
+
+                <div class="buttons">
+                    <a class="play-button" href="https://github.com/Noe-Delcroix/Ant-Simulation" target="_blank"><i class="fa-brands fa-github"></i> Code Source</a>
+                </div>
+
+                <ul>
+                    <li style="background-color: #D82C33; color: black;">Java</li>
+                    <li style="background-color: #0068FF; color: white;">Processing</li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="projet-left">
+            <div class="info">
+
+                <div class="text">
+                    <div class="title">
+                        <h1>Flappy Bird NeuroEvolution</h1>
+                        <h2>Juin 2020</h2>
+                    </div>
+                    <p>Ce programme utilise une librairie de réseaux neuronaux que j'ai codé afin d'entrainer des oiseaux de Flappy Bird à sauter au bon moment pour passer entre les tuyaux</p>
+                </div>
+
+                <div class="buttons">
+                    <a class="play-button" href="https://editor.p5js.org/Noway/full/yMw2gOP37" target="_blank"><i class="fa-solid fa-play"></i> Essayer en ligne</a>
+                    <a class="code-button" href="https://github.com/Noe-Delcroix/Flappy-Bird-NeuroEvolution" target="_blank"><i class="fa-brands fa-github"></i> Code Source</a>
+                </div>
+
+                <ul>
+                    <li style="background-color: #EAD41C; color: black;">JavaScript</li>
+                    <li style="background-color: #E11D59; color: white;">p5.js</li>
+                    <li style="background-color: #2299F8; color: black;">Reseau Neuronal</li>
+                    
+                </ul>
+            </div>
+            <video src="ressources/videos/flappy-bird.mp4" oncontextmenu="return false;" autoplay=true loop=true muted=true>Vidéo flappy-bird</video>
+        </div>
+
+
+        <div class="projet-right">
+            <video src="ressources/videos/jeu-du-confinement.mkv" oncontextmenu="return false;" autoplay=true loop=true muted=true>Vidéo Jeu du Confinement</video>
+            <div class="info">
+
+                <div class="text">
+                    <div class="title">
+                        <h1>Le Jeu Du Confinement</h1>
+                        <h2>Mai 2020</h2>
+                    </div>
+                    <p>Un petit jeu d'arcade dans le style 8bit. Essayez de faire vos course dans un supermarché tout en respectant les gestes barrière</p>
+                </div>
+
+                <div class="buttons">
+                    <a class="play-button" href="https://editor.p5js.org/Noway/full/650cnr2WN" target="_blank"><i class="fa-solid fa-play"></i> Essayer en ligne</a>
+                    <a class="code-button" href="https://github.com/Noe-Delcroix/Le-Jeu-Du-Confinement" target="_blank"><i class="fa-brands fa-github"></i> Code Source</a>
+                </div>
+
+                <ul>
+                    <li style="background-color: #EAD41C; color: black;">JavaScript</li>
+                    <li style="background-color: #E11D59; color: white;">p5.js</li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="projet-left">
+            <div class="info">
+
+                <div class="text">
+                    <div class="title">
+                        <h1>Tile Based Platformer</h1>
+                        <h2>Mars 2020</h2>
+                    </div>
+                    <p>Un platformer 2D aux graphismes simplistes avec un editeur de niveaux intégré ainsi qu'un système de sauvegarde de niveaux</p>
+                </div>
+
+                <div class="buttons">
+                    <a class="play-button" href="https://editor.p5js.org/Noway/full/evY_AHGk1" target="_blank"><i class="fa-solid fa-play"></i> Essayer en ligne</a>
+                    <a class="code-button" href="https://github.com/Noe-Delcroix/Tile-Based-Platformer" target="_blank"><i class="fa-brands fa-github"></i> Code Source</a>
+                </div>
+
+                <ul>
+                    <li style="background-color: #EAD41C; color: black;">JavaScript</li>
+                    <li style="background-color: #FF5722; color: white;">HTML</li>
+                    <li style="background-color: #E11D59; color: white;">p5.js</li>
+                    
+                </ul>
+            </div>
+            <video src="ressources/videos/platformer.mkv" oncontextmenu="return false;" autoplay=true loop=true muted=true>Vidéo Platformer</video>
+        </div>
+
+
+        
+        
     </section>
 
 </body>
