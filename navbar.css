@@ -7,11 +7,10 @@
     align-items: center;
     background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 100;
-    transition: top 0.3s
 }
 
 .title{
-    font-size: 3em;
+    font-size: 2.5em;
     color : var(--text-color);
     font-weight: bold;
     white-space: nowrap;
@@ -23,17 +22,26 @@
     align-items: center;
 }
 
+.navbar-list {
+    display: flex;
+}
+
 .navbar-list ul{
     display: flex;
     margin-right: 10px;
+    flex-direction: row;
+}
 
-    
+.navbar-list i{
+    color: var(--title-color);
+    font-size: 0;
+    visibility: hidden;
 }
 
 .navbar-list ul li a{
     color: var(--title-color);
-    padding:1em 0.5em 1em 0.5em;
-    font-size: 2em;
+    padding: 1em 0.5em 1em 0.5em;
+    font-size: 1.5em;
     display: block;
     font-weight: bold;
     white-space: nowrap;
@@ -42,6 +50,43 @@
 .navbar-list ul li:hover{
     background: linear-gradient(180deg, var(--bg-color1) 0%, rgba(0, 0, 0, 0) 100%);
 }
+
+@media (max-width:1000px) {
+    .navbar-list ul{
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 50px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .navbar-list i{
+        margin-right: 15px;
+        font-size: 3em;
+        visibility: visible;
+    }
+
+    .navbar-list ul li{
+        background: var(--bg-color4);
+        border: 2px solid var(--bg-color1);
+        border-radius: 20px;
+        transition: background 0.3s;
+    }
+
+    .navbar-list ul li:hover{
+        background: var(--bg-color3);
+    }
+
+    .navbar-list ul li a{
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        
+    }
+}
+
+
+
+
 
 .navbar-button{
     background: none;

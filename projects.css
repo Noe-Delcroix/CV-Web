@@ -39,8 +39,15 @@
     padding: 2%;
     background: var(--bg-color4);
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-top: 5%;
+}
+
+@media(max-width:1000px){
+    .projet-right , .projet-left{
+        flex-direction: column;
+    }
 }
 
 .projet-right{
@@ -60,8 +67,20 @@
     transition: 1s;
 }
 
+@media(max-width:1000px){
+    .projet-right video , .projet-left video{
+        width: 60%;
+    }
+}
+
 .projet-right video:hover , .projet-left video:hover{
     width: 60%;
+}
+
+@media(max-width:1000px){
+    .projet-right video:hover , .projet-left video:hover{
+        width: 100%;
+    }
 }
 
 .projet-right .info , .projet-left .info{
