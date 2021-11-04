@@ -58,7 +58,7 @@
         position: absolute;
         flex-direction: column;
         right: 0;
-        top: 50px;
+        top: -300px;
         transition: top 0.3s;
     }
 
