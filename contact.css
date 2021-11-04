@@ -1,0 +1,51 @@
+#contact-section{
+    background: var(--bg-color3);
+    padding: 2% 7%;
+}
+
+#contact-section h1{
+    color:var(--text-color);
+    font-weight: bold;
+    font-size: 3em;
+    border-bottom: solid 3px var(--text-color);
+}
+
+#contact-section ul{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--bg-color2);
+    border-radius: 20px;
+    box-shadow: -5px 5px var(--bg-color4);
+}
+
+#contact-section ul li{
+    border-radius: 20px;
+    padding: 1%;
+    margin: 1% 0.5%;
+}
+
+#contact-section ul li{
+    color: var(--title-color);
+    background-color: var(--bg-color3);
+    
+    font-size: 1.5em;
+    transition: 0.3s;
+    box-shadow: -5px 5px var(--bg-color4);
+}
+
+#contact-section ul li a{
+    color: var(--title-color);
+    transition: 0.3s;
+}
+
+#contact-section ul li a:hover ,#contact-section ul li:hover{
+    color: var(--text-color);
+}
+
+#contact-section form{
+    border-radius: 20px;
+    background-color: var(--bg-color4);
+    margin-top: 3%;
+    padding: 2%;
+}

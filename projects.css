@@ -1,9 +1,10 @@
 #projets-section{
     background: var(--bg-color3);
+    padding-bottom: 5%;
 }
 
 #projets-section .header{
-    padding: 2% 7%;
+    padding: 2% 7% 0% 7%;
 }
 
 #projets-section .header h1{
@@ -39,7 +40,7 @@
     background: var(--bg-color4);
     display: flex;
     align-items: center;
-    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .projet-right{

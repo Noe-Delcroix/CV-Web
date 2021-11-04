@@ -48,8 +48,8 @@
 .competence-item span {
     visibility: hidden;
     
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(0, 0, 0, 0);
+    background-color: var(--bg-color4);
+    color: var(--title-color);
     font-size: 1.3em;
     font-weight: bold;
     
@@ -61,7 +61,7 @@
 
     width: auto;
     padding: 5%;
-    transform: translateX(-50%) translateY(50%);
+    transform: translateX(-50%) translateY(150%);
     
     bottom: 100%;
     left: 50%;
@@ -72,6 +72,5 @@
 
 .competence-item:hover span {
     visibility: visible;
-    background-color: var(--bg-color4);
-    color: var(--title-color);
+    transform: translateX(-50%) translateY(50%);
 }

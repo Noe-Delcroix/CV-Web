@@ -1,0 +1,92 @@
+#loisirs-section{ 
+    background: var(--bg-color4);
+    padding: 2% 7%;
+}
+
+#loisirs-section>h1{
+    color:var(--text-color);
+    font-weight: bold;
+    font-size: 3em;
+    border-bottom: solid 3px var(--text-color);
+}
+
+.loisirs {
+    border-radius: 20px;
+    margin-top: 3%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bg-color3);
+}
+
+.loisir{
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+
+}
+
+.loisir img{
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+}
+
+.loisir-overlay{
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.loisir-overlay:hover{
+    opacity: 1;
+    backdrop-filter: blur(2px);
+}
+
+.loisir-overlay > *{
+    transform:translateY(50px);
+    transition: transform 0.3s;
+}
+
+.loisir-overlay:hover > *{
+    transform:translateY(0px);
+}
+
+.loisir-overlay h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.loisir-overlay p{
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+
+.loisir-overlay a{
+    margin-top: 3%;
+    color: white;
+    font-size: 1.5em;
+    background: linear-gradient(180deg, rgba(247,144,16,1) 0%, rgba(248,58,14,1) 100%);
+    padding: 3%;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+.loisir-overlay a:hover{
+    transform:scale(1.1);
+}
