@@ -59,8 +59,7 @@
         flex-direction: column;
         right: 0;
         top: 50px;
-        opacity: 0;
-        transition: opacity 0.3s;
+        transition: top 0.3s;
     }
 
     .navbar-list i{

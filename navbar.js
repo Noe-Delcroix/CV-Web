@@ -2,15 +2,15 @@ const toggleButton = document.getElementById("toggle-button");
 const navList= document.getElementById("toggleable-list");
 
 toggleButton.addEventListener('click', () =>{
-
-    if (navList.style.opacity==0){
-        navList.style.opacity=1;
+    if (navList.style.top=="50px"){
+        navList.style.top="-300px";
     }else{
-        navList.style.opacity=0;
+        navList.style.top="50px";
     }
+    
 });
 
 
 window.onscroll = function() {
-    navList.style.opacity=0;
+    navList.style.top="-300px";
 }
