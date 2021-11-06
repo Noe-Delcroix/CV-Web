@@ -16,6 +16,25 @@
     white-space: nowrap;
 }
 
+.logo{
+    margin: 5% 5% 5% 0%;
+    width : 0px;
+    visibility: hidden;
+}
+
+@media (max-width:1000px) {
+
+    .title{
+        font-size: 0em;
+        visibility: hidden;
+    }
+
+    .logo{
+        width : 40px;
+        
+        visibility: visible;
+    }
+}
 
 
 .navbar-left{
@@ -55,6 +74,9 @@
 }
 
 @media (max-width:1000px) {
+
+
+
     .navbar-list ul{
         position: absolute;
         flex-direction: column;
