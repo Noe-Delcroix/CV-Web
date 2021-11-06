@@ -78,6 +78,11 @@
 
 .competence-item span a{
     color: var(--title-color);
+    transition: 0.3s;
+}
+
+.competence-item span a:hover{
+    color: var(--text-color);
 }
 
 .competence-item:hover span {
