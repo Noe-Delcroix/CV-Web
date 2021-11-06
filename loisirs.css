@@ -27,10 +27,18 @@
     margin-top: 2%;
 }
 
+@media (max-width : 700px){
+    .loisir{
+        width:200px;
+        height:200px;
+    }
+}
+
 .loisir img{
     border-radius: 20px;
     display: block;
     width: 100%;
+    height: 100%;
 }
 
 .loisir-overlay{

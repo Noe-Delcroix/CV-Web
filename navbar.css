@@ -32,6 +32,7 @@
     display: flex;
     margin-right: 10px;
     flex-direction: row;
+    background:none;
 }
 
 .navbar-list i{
@@ -59,6 +60,9 @@
         flex-direction: column;
         right: 0;
         top: -300px;
+        background: var(--bg-color4);
+        border: 2px solid var(--bg-color1);
+        border-radius: 20px;
         transition: top 0.3s;
     }
 
@@ -69,8 +73,6 @@
     }
 
     .navbar-list ul li{
-        background: var(--bg-color4);
-        border: 2px solid var(--bg-color1);
         border-radius: 20px;
         transition: background 0.3s;
     }
@@ -107,15 +109,4 @@
 .navbar .navbar-button:hover{
     color: var(--text-color);
     background-color: var(--bg-color1);
-}
-
-
-@media (max-width:700px) {
-    .navbar .title{
-        font-size: 1.5em;
-    }
-
-    .navbar .navbar-button{
-        font-size: 1em;
-    }
 }

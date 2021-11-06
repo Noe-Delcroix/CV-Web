@@ -23,6 +23,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -36,8 +38,14 @@ body{
     background:none;
     overflow-x: hidden;
     overflow-y: auto;
+    font-size: 100%;
 }
 
+@media (max-width : 700px){
+    body{
+        font-size: 60%;
+    }
+}
 
 ::-webkit-scrollbar {
     width: 10px;

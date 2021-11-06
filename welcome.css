@@ -16,7 +16,7 @@
 
 .welcome{
     border-radius: 25px;
-    margin: 7% auto;
+    margin: 10vh auto;
     width: 70%;
     background: var(--bg-color4);
     display: flex;
@@ -50,11 +50,6 @@
     color:var(--title-color);
 }
 
-@media(max-width:1000px){
-    .welcome-info h1{
-        font-size: 1.5em;
-    }
-}
 
 .welcome-info p{
     text-align: justify;
@@ -63,11 +58,6 @@
     color:var(--text-color);
 }
 
-@media(max-width:1000px){
-    .welcome-info p{
-        font-size: 1.2em;
-    }
-}
 
 .welcome-info h3{
     text-align: justify;

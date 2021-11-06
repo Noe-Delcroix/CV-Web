@@ -2,10 +2,10 @@ const toggleButton = document.getElementById("toggle-button");
 const navList= document.getElementById("toggleable-list");
 
 toggleButton.addEventListener('click', () =>{
-    if (navList.style.top=="50px"){
+    if (navList.style.top=="35px"){
         navList.style.top="-300px";
     }else{
-        navList.style.top="50px";
+        navList.style.top="35px";
     }
     
 });
