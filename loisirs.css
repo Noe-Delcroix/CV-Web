@@ -57,22 +57,24 @@
     justify-content: center;
     padding: 5%;
 
-    opacity: 0;
+    opacity: 1;
+    backdrop-filter: blur(2px);
     transition: 0.3s;
+    
 }
 
 .loisir-overlay:hover{
-    opacity: 1;
-    backdrop-filter: blur(2px);
+    opacity: 0;
+    backdrop-filter: none;
 }
 
 .loisir-overlay > *{
-    transform:translateY(50px);
+    transform:translateY(0px);
     transition: transform 0.3s;
 }
 
 .loisir-overlay:hover > *{
-    transform:translateY(0px);
+    transform:translateY(50px);
 }
 
 .loisir-overlay h1{
@@ -86,7 +88,7 @@
 }
 
 
-.loisir-overlay a{
+/*.loisir-overlay a{
     margin-top: 3%;
     color: white;
     font-size: 1.5em;
@@ -98,4 +100,4 @@
 
 .loisir-overlay a:hover{
     transform:scale(1.1);
-}
+}*/
