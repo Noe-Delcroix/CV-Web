@@ -35,32 +35,41 @@
 
 
 
-.projet-right , .projet-left{
+.projet{
     padding: 2%;
     background: var(--bg-color4);
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin-top: 5%;
 }
 
 @media(max-width:1000px){
-    .projet-right , .projet-left{
+    .projet:nth-child(2n-1){
+        flex-direction: column;
+    }
+    .projet:nth-child(2n){
         flex-direction: column;
     }
 }
+@media(min-width:1000px){
+    .projet:nth-child(2n-1){
+        flex-direction: row;
+    }
+    .projet:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+}
 
-.projet-right{
+.projet:nth-child(2n-1){
     margin-right: 5%;
     border-radius: 0 20px 20px 0;
 }
-.projet-left{
+.projet:nth-child(2n){
     margin-left: 5%;
     border-radius: 20px 0 0 20px;
 }
 
-
-.projet-right video , .projet-left video{
+.projet video{
     width: 35%;
     border-radius: 20px;
     border: solid 3px var(--bg-color1) ;
@@ -68,39 +77,40 @@
 }
 
 @media(max-width:1000px){
-    .projet-right video , .projet-left video{
+    .projet video{
         width: 60%;
     }
 }
 
-.projet-right video:hover , .projet-left video:hover{
+.projet video:hover{
     width: 60%;
 }
 
 @media(max-width:1000px){
-    .projet-right video:hover , .projet-left video:hover{
+    .projet video:hover{
         width: 100%;
     }
 }
 
-.projet-right .info , .projet-left .info{
+.projet .info{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.projet-right .info
+
+.projet:nth-child(2n-1) .info
 {
     margin-left: 2%;
 }
-
-.projet-left .info
+.projet:nth-child(2n) .info
 {
     margin-right: 2%;
 }
 
-.projet-right .info .text .title, .projet-left .info .text .title{
+
+.projet .info .text .title{
     border-bottom: dashed 2px var(--text-color);
     display: flex;
     flex-wrap: wrap;
@@ -108,20 +118,20 @@
     align-items: center;
 }
 
-.projet-right .info .text .title h1, .projet-left .info .text .title h1{
+.projet .info .text .title h1{
     color:var(--text-color);
     font-weight: bold;
     font-size: 1em;
     
 }
 
-.projet-right .info .text .title h2 , .projet-left .info .text .title h2{
+.projet .info .text .title h2{
     color:var(--title-color);
     font-size: 0.7em;
     
 }
 
-.projet-right .info .text p , .projet-left .info .text p{
+.projet .info .text p{
     color:var(--title-color);
     font-size: 1.7em;
     text-align: justify;
@@ -130,7 +140,7 @@
     display: inline-block;
 }
 
-.projet-right .info .buttons , .projet-left .info .buttons{
+.projet .info .buttons{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -138,7 +148,7 @@
     
 }
 
-.projet-right .info .buttons .play-button,.projet-left .info .buttons .play-button{
+.projet .info .buttons .play-button{
     color: var(--text-color);
     font-size: 2em;
     background: var(--bg-color1);
@@ -148,13 +158,13 @@
     margin-bottom: 2%;
 }
 
-.projet-right .info .buttons .play-button:hover, .projet-left .info .buttons .play-button:hover{
+.projet .info .buttons .play-button:hover{
     background: var(--title-color);
     color: var(--bg-color4);
     transform:scale(1.1);
 }
 
-.projet-right .info .buttons .code-button, .projet-left .info .buttons .code-button{
+.projet .info .buttons .code-button{
     color: var(--text-color);
     font-size: 2em;
     background: var(--bg-color3);
@@ -163,12 +173,12 @@
     transition: 0.3s;
 }
 
-.projet-right .info .buttons .code-button:hover , .projet-left .info .buttons .code-button:hover{
+.projet .info .buttons .code-button:hover{
     background: var(--bg-color2);
     transform:scale(1.05);
 }
 
-.projet-right .info ul , .projet-left .info ul{
+.projet .info ul{
     padding: 2% 0%;
     display: flex;
     flex-wrap: wrap;
@@ -176,7 +186,7 @@
     font-size: 1.2em;
 }
 
-.projet-right .info ul li , .projet-left .info ul li{
+.projet .info ul li{
     padding: 0.5% 1%;
     font-weight: bold;
     border-radius: 10px;
@@ -184,6 +194,6 @@
     transition: 0.3s;
 }
 
-.projet-right .info ul li:hover , .projet-left .info ul li:hover{
+.projet .info ul li:hover{
     filter: brightness(200%);
 }
